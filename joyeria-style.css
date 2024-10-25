@@ -15,7 +15,7 @@ header {
     height: 450px; 
     display: flex;
     justify-content: center;
-    background-image: url('/img-dm/marmol.webp');
+    background-image: url('./img-dm/marmol.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
