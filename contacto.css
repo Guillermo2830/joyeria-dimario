@@ -1,0 +1,182 @@
+.contac-container {
+    width: 100%;
+    height: auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items: center;
+   background-image: url('./img-dm/marmol.webp');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+   
+}
+
+
+.inactivo {
+    display: none;
+}
+
+.contact-info-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 150px; 
+    gap: 14px;
+   
+}
+
+.card-info-container {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 250px;
+    max-width: 250px;
+    height: 190px;
+    margin: 50px 20px 0;
+    padding: 0;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px 0 black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-body {
+  display: grid;
+  margin: 1px;
+  
+}
+
+.contact-body i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+} 
+
+.contact-body a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.contact-body p {
+    text-align: center;
+}
+
+.formulario-container {
+   width: 800px;
+   height: 550px;
+   background: white;
+   border-radius: 25px;
+   padding: 56px;
+}
+
+.formulario-info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.formulario-info h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.formulario-info .formulario-nombre {
+    width: 500px;
+    height: 50px;
+    border-radius: 12px;
+    background: whitesmoke;
+}
+
+.formulario-info .formulario-correo {
+    width: 500px;
+    height: 50px;
+    border-radius: 12px;
+    background: whitesmoke;
+}
+.formulario-info .formulario-comentario {
+    width: 500px;
+    height: 150px;
+    border-radius: 12px;
+    background: whitesmoke;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contac-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-container {
+        padding: 50px;
+    }
+
+    .card-info-container {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .formulario-container {
+        width: 350px;
+        height: auto;
+       display: flex;
+       justify-content: center;
+       margin: 50px;
+    }
+
+    .formulario-info .formulario-nombre,
+    .formulario-info .formulario-correo,
+    .formulario-info .formulario-comentario {
+        width: 300px;
+    }
+
+    .formulario-info h1 {
+        font-size: 35px;
+    }
+
+    .button-container button {
+        width: 120px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .contact-body i {
+        font-size: 60px;
+    }
+
+    .contact-body a {
+        font-size: 20px;
+    }
+
+    .formulario-info h1 {
+        font-size: 30px;
+    }
+}
